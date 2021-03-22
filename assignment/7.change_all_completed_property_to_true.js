@@ -7,7 +7,5 @@ let todos = [
 function toggleCompletedAll() {
     todos = todos.map(todo => todo.completed === false ? {...todo, completed: !todo.completed } : todo);
 }
-
 toggleCompletedAll();
-
 console.log(todos);

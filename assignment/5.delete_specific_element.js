@@ -7,7 +7,5 @@ let todos = [
 function removeTodo(id) {
     todos = todos.filter(todo => todo.id !== id);
 }
-
 removeTodo(2);
-
 console.log(todos);
