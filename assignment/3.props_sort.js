@@ -6,7 +6,7 @@ const todos = [
 
 function sortBy(key) {
     copiedTodos = [...todos];
-    return copiedTodos.sort((a, b) => (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0);
+    return copiedTodos.sort((a, b) => (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0));
 }
 
 console.log(sortBy('id'));
