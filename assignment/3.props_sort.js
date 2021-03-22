@@ -6,13 +6,7 @@ const todos = [
 
 function sortBy(key) {
     copiedTodos = [...todos];
-    if (key === 'id') {
-        return copiedTodos.sort((a, b) => a.id - b.id);
-    } else if (key === 'content') {
-        return copiedTodos.sort((a, b) => (a.content > b.content) ? 1 : ((b.content > a.content) ? -1 : 0));
-    } else if (key === 'completed') {
-        return copiedTodos.sort((a, b) => a.completed - b.completed);
-    }
+    return copiedTodos.sort((a, b) => (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0);
 }
 
 console.log(sortBy('id'));
