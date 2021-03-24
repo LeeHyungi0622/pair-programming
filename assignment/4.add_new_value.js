@@ -5,7 +5,7 @@ let todos = [
 ];
 
 function addTodo(newTodo) {
-    todos = [...todos, newTodo];
+    todos = [newTodo, ...todos];
 }
 
 addTodo({ id: 4, content: 'Test', completed: false });
